@@ -253,6 +253,9 @@ btnSort.addEventListener('click', function (e) {
 // LECTURES
 
 console.log(23 === 23.0);
+
+// Base 10 - 0 to 9.    1/10 = 0.1    3/10 = 0.33333
+// Binary Base 2 - 0 1
 console.log(0.1 + 0.2);
 console.log(0.1 + 0.2 === 0.3);
 
@@ -261,5 +264,19 @@ console.log(Number('23')); //rezultat je broj
 console.log(+'23'); //rezultat je broj (jednostavnije resenje od ovog iznad)
 
 //izdvajanje broja iz stringa
-console.log(Number.parseInt('30px')); // rezultat je 30
-console.log(Number.parseInt('e23')); // rezultat je NaN, jer broj mora biti prvi u stringu
+console.log(Number.parseInt('30px', 10)); // rezultat je 30 (10 ovde predstavlja Base 10)
+console.log(Number.parseInt('e23', 10)); // rezultat je NaN, jer broj mora biti prvi u stringu (10 ovde predstavlja Base 10)
+
+console.log(Number.parseInt('2.5rem')); // rezultat je 2
+console.log(Number.parseFloat('2.5rem')); // rezultat je 2.5
+
+console.log(Number.isNaN(23));
+console.log(Number.isNaN('23'));
+console.log(Number.isNaN(+'20X'));
+console.log(Number.isNaN(23 / 0));
+
+// proveravanje da li je vrednost broj
+console.log(Number.isFinite(23));
+console.log(Number.isFinite('23'));
+console.log(Number.isFinite(+'23X'));
+console.log(Number.isFinite(23 / 0));
