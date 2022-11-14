@@ -259,3 +259,7 @@ console.log(0.1 + 0.2 === 0.3);
 //pretvaranje stringa u broj uz pomoc + znaka
 console.log(Number('23')); //rezultat je broj
 console.log(+'23'); //rezultat je broj (jednostavnije resenje od ovog iznad)
+
+//izdvajanje broja iz stringa
+console.log(Number.parseInt('30px')); // rezultat je 30
+console.log(Number.parseInt('e23')); // rezultat je NaN, jer broj mora biti prvi u stringu
