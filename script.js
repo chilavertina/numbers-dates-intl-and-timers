@@ -328,3 +328,10 @@ const isEven = n => n % 2 === 0;
 console.log(isEven(2));
 console.log(isEven(5));
 console.log(isEven(143));
+
+labelBalance.addEventListener('click', function () {
+  [...document.querySelectorAll('.movements__row')].forEach(function (row, i) {
+    if (i % 2 === 0) row.style.backgroundColor = 'orange';
+    if (i % 3 === 0) row.style.backgroundColor = 'blue';
+  });
+});
