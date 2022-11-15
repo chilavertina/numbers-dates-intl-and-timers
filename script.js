@@ -281,7 +281,7 @@ console.log(Number.isFinite('23'));
 console.log(Number.isFinite(+'23X'));
 console.log(Number.isFinite(23 / 0));
 */
-
+/*
 console.log(Math.sqrt(25)); // koren od 25
 console.log(25 ** (1 / 2)); // koren od 25
 console.log(8 ** (1 / 3)); // koren na kub od 8
@@ -320,3 +320,11 @@ console.log((2.345).toFixed(2)); // 3.35
 // metode iznad vracaju rezultat kao stringove
 
 console.log(+(2.345).toFixed(2)); // u ovom slucaju vraca rezultat kao Number
+*/
+console.log(5 % 2); // ostatak je 1
+console.log(4 % 2); // ostatak je 0
+//funkcija da li je broj paran
+const isEven = n => n % 2 === 0;
+console.log(isEven(2));
+console.log(isEven(5));
+console.log(isEven(143));
