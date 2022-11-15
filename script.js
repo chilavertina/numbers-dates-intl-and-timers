@@ -285,3 +285,9 @@ console.log(Number.isFinite(23 / 0));
 console.log(Math.sqrt(25)); // koren od 25
 console.log(25 ** (1 / 2)); // koren od 25
 console.log(8 ** (1 / 3)); // koren na kub od 8
+
+console.log(Math.max(5, 18, 2, 11, 23, 4)); //23
+console.log(Math.max(5, 18, 2, 11, '23', 4)); // 23
+console.log(Math.max(5, 18, 2, 11, '23px', 4)); //Nan
+
+console.log(Math.min(5, 18, 2, 11, 23, 4)); // 2
