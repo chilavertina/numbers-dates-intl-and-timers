@@ -291,3 +291,5 @@ console.log(Math.max(5, 18, 2, 11, '23', 4)); // 23
 console.log(Math.max(5, 18, 2, 11, '23px', 4)); //Nan
 
 console.log(Math.min(5, 18, 2, 11, 23, 4)); // 2
+
+console.log(Math.PI * Number.parseFloat('10px') ** 2); //povrsina kruga od 10px
