@@ -312,3 +312,11 @@ console.log(Math.floor(23.9));
 
 console.log(Math.trunc(-23.3)); // -23
 console.log(Math.floor(-23.3)); // -24 (floor je precizniji od trunc zbog negativnih brojeva)
+
+//zaokruzivanje decimala
+console.log((2.7).toFixed(0)); // 3
+console.log((2.7).toFixed(3)); // 2.700
+console.log((2.345).toFixed(2)); // 3.35
+// metode iznad vracaju rezultat kao stringove
+
+console.log(+(2.345).toFixed(2)); // u ovom slucaju vraca rezultat kao Number
