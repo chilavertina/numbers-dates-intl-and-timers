@@ -299,3 +299,16 @@ console.log(Math.trunc(Math.random() * 6) + 1); //nasumicni broj do 6
 const randomInt = (min, max) =>
   Math.trunc(Math.random() * (max - min) + 1) + min; // funkcija za nasumicni broj izmedju dva broja
 console.log(randomInt(15, 20));
+
+//zaokruzivanje integera
+console.log(Math.round(23.3)); //zaokruzuje na najblizi broj (23 i 24)
+console.log(Math.round(23.9));
+
+console.log(Math.ceil(23.3)); // zaokruzuje na broj iznad (24)
+console.log(Math.ceil(23.9));
+
+console.log(Math.floor(23.3)); // zaokruzuje na broj ispod (23)
+console.log(Math.floor(23.9));
+
+console.log(Math.trunc(-23.3)); // -23
+console.log(Math.floor(-23.3)); // -24 (floor je precizniji od trunc zbog negativnih brojeva)
