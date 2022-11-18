@@ -356,7 +356,7 @@ console.log(PI);
 console.log(Number('230_000')); //Nan
 console.log(parseInt('230_000')); //230
 */
-
+/*
 //BIG INT
 
 console.log(518219587125982719528782197591n);
@@ -377,3 +377,36 @@ console.log(20n === 20); //false
 console.log(20n == '20'); //true
 
 console.log(huge + ' is REALLY big!!!');
+*/
+
+// DATUM
+/*
+const now = new Date();
+console.log(now);
+
+console.log(new Date('Aug 02 2020 18:05:41'));
+console.log(new Date('December 24, 2015'));
+console.log(new Date(account1.movementsDates[0]));
+
+console.log(new Date(2037, 10, 19, 15, 23, 5));
+*/
+//Metode datuma
+const future = new Date(2037, 10, 20, 15, 23, 13);
+console.log(future);
+console.log(future.getFullYear());
+console.log(future.getMonth());
+console.log(future.getDate());
+console.log(future.getDay());
+console.log(future.getHours());
+console.log(future.getMinutes());
+console.log(future.getSeconds());
+console.log(future.toISOString());
+
+console.log(future.getTime()); //vreme od 1. januara 1970.
+
+console.log(new Date(2142339793000));
+
+console.log(Date.now()); //trenutno vreme od 1. januara 1970.
+
+future.setFullYear(2040);
+console.log(future);
