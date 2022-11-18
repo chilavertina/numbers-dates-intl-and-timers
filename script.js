@@ -155,6 +155,11 @@ const updateUI = function (acc) {
 // Event handlers
 let currentAccount;
 
+// FAKE ALWAYS LOGGED IN
+currentAccount = account1;
+updateUI(currentAccount);
+containerApp.style.opacity = 100;
+
 btnLogin.addEventListener('click', function (e) {
   // Prevent form from submitting
   e.preventDefault();
@@ -390,6 +395,7 @@ console.log(new Date(account1.movementsDates[0]));
 
 console.log(new Date(2037, 10, 19, 15, 23, 5));
 */
+/*
 //Metode datuma
 const future = new Date(2037, 10, 20, 15, 23, 13);
 console.log(future);
@@ -410,3 +416,4 @@ console.log(Date.now()); //trenutno vreme od 1. januara 1970.
 
 future.setFullYear(2040);
 console.log(future);
+*/
