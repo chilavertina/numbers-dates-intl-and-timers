@@ -337,7 +337,7 @@ labelBalance.addEventListener('click', function () {
   });
 });
 */
-
+/*
 // NUMERIC SEPARATOR
 
 //207,400,000,000
@@ -355,3 +355,25 @@ console.log(PI);
 
 console.log(Number('230_000')); //Nan
 console.log(parseInt('230_000')); //230
+*/
+
+//BIG INT
+
+console.log(518219587125982719528782197591n);
+console.log(BigInt(42143264363));
+
+console.log(100000n + 1000000n);
+
+console.log(983579832759328728723592389572052n * 100000n);
+
+const huge = 1471978125918257912851n;
+const num = 23;
+//console.log(huge * num); //prikazace gresku, jer nije moguce kombinovati bigInt broj i obican broj
+console.log(huge * BigInt(num)); //ovo ce dati rezultat
+
+//izuzeci
+console.log(20n > 15); //true
+console.log(20n === 20); //false
+console.log(20n == '20'); //true
+
+console.log(huge + ' is REALLY big!!!');
