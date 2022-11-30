@@ -194,8 +194,9 @@ const options = {
   year: 'numeric',
   weekday: 'long',
 };
+const locale = navigator.language;
 
-labelDate.textContent = new Intl.DateTimeFormat('en-GB', options).format(now);
+labelDate.textContent = new Intl.DateTimeFormat(locale, options).format(now);
 
 btnLogin.addEventListener('click', function (e) {
   // Prevent form from submitting
