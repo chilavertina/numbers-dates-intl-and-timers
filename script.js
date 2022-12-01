@@ -521,7 +521,8 @@ console.log(
   new Intl.NumberFormat(navigator.language, options).format(num)
 ); // formatiranje brojeva na osnovu browsera korisnika
 */
-
+/*
+//SET TIMEOUT
 const ingredients = ['olives', 'spinach'];
 const pizzaTimer = setTimeout(
   (ing1, ing2) =>
@@ -532,3 +533,11 @@ const pizzaTimer = setTimeout(
 console.log('Waiting pizza...');
 
 if (ingredients.includes('spinach')) clearTimeout(pizzaTimer); //tajmer ce se zaustaviti ako sadrzi 'spinach' u sastojcima
+*/
+
+//SET INTERVAL
+
+setInterval(function () {
+  const now = new Date();
+  console.log(now);
+}, 3000);
