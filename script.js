@@ -534,10 +534,17 @@ console.log('Waiting pizza...');
 
 if (ingredients.includes('spinach')) clearTimeout(pizzaTimer); //tajmer ce se zaustaviti ako sadrzi 'spinach' u sastojcima
 */
-
+/*
 //SET INTERVAL
 
 setInterval(function () {
   const now = new Date();
   console.log(now);
 }, 3000);
+*/
+
+//CODING CHALLENGE
+setInterval(function () {
+  const now = new Date();
+  console.log(`${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`);
+}, 1000);
