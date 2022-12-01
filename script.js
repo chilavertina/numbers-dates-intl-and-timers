@@ -520,11 +520,13 @@ console.log(
 ); // formatiranje brojeva na osnovu browsera korisnika
 */
 
-setTimeout(
+const ingredients = ['olives', 'spinach'];
+const pizzaTimer = setTimeout(
   (ing1, ing2) =>
     console.log(`Here is your pizza 🍕 with ${ing1} and ${ing2}.`),
   3000,
-  'olives',
-  'spinach'
+  ...ingredients
 );
 console.log('Waiting pizza...');
+
+if (ingredients.includes('spinach')) clearTimeout(pizzaTimer); //tajmer ce se zaustaviti ako sadrzi 'spinach' u sastojcima
