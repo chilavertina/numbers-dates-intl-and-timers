@@ -520,5 +520,11 @@ console.log(
 ); // formatiranje brojeva na osnovu browsera korisnika
 */
 
-setTimeout(() => console.log('Here is your pizza 🍕'), 3000);
+setTimeout(
+  (ing1, ing2) =>
+    console.log(`Here is your pizza 🍕 with ${ing1} and ${ing2}.`),
+  3000,
+  'olives',
+  'spinach'
+);
 console.log('Waiting pizza...');
