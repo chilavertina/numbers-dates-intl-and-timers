@@ -491,9 +491,15 @@ console.log(days1);
 
 const num = 38884764.23;
 
+// const options = {
+//   style: 'unit',
+//   unit: 'mile-per-hour',
+// };
+
 const options = {
-  style: 'unit',
-  unit: 'mile-per-hour',
+  style: 'currency',
+  unit: 'celsius',
+  currency: 'EUR',
 };
 
 console.log('US: ', new Intl.NumberFormat('en-US', options).format(num));
