@@ -519,3 +519,6 @@ console.log(
   new Intl.NumberFormat(navigator.language, options).format(num)
 ); // formatiranje brojeva na osnovu browsera korisnika
 */
+
+setTimeout(() => console.log('Here is your pizza 🍕'), 3000);
+console.log('Waiting pizza...');
